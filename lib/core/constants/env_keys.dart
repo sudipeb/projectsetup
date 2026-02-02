@@ -1,8 +1,8 @@
 class EnvKeys {
   ///[Environment Variables]
   static const String devEnv = 'DevelopmentEnv';
-  static const String stageEnv = 'StageEnv';
-  static const String prodEnv = 'ProdEnv';
+  static const String stageEnv = 'StagingEnv';
+  static const String prodEnv = 'ProductionEnv';
 
   ///[Environment Variable path]
   static const String devEnvPath = '.env_dev';

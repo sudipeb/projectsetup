@@ -1,0 +1,94 @@
+# Flavor definitions for different environments
+# Each flavor represents a separate app build with its own
+# app name, bundle/application ID, Firebase config, and app icon.
+
+flavors:
+  # -------------------------------
+  # Development environment
+  # Used for local development and internal testing
+  # -------------------------------
+  development:
+    app:
+      # App name displayed on the device
+      name: "Project Setup - DEV"
+
+      # Launcher icon used specifically for the development flavor
+      # Helps easily distinguish DEV builds from STAGE/PROD
+      icon: "assets/launcher_icon/launcher_icon-dev.png"
+
+    android:
+      # Unique Android application ID for development
+      applicationId: "com.example.projectsetup"
+
+      # Firebase configuration file for Android (DEV project)
+      # firebase:
+      #   config: ".firebase/development/google-services.json"
+
+    ios:
+      # Unique iOS bundle identifier for development
+      bundleId: "com.example.projectsetup"
+
+      # Firebase configuration file for iOS (DEV project)
+      # firebase:
+      #   config: ".firebase/development/GoogleService-Info.plist"
+
+  # -------------------------------
+  # Staging environment
+  # Used for QA, UAT, and pre-production testing
+  # -------------------------------
+  staging:
+    app:
+      # App name displayed on the device
+      name: "Project Setup - STAGE"
+
+      # Launcher icon for staging builds
+      icon: "assets/launcher_icon/launcher_icon.png"
+
+    android:
+      # Unique Android application ID for staging
+      applicationId: "com.example.projectsetup"
+
+      # Firebase configuration file for Android (STAGING project)
+      # firebase:
+      #   config: ".firebase/staging/google-services.json"
+
+    ios:
+      # Unique iOS bundle identifier for staging
+      bundleId: "com.example.projectsetup"
+
+      # Firebase configuration file for iOS (STAGING project)
+      # firebase:
+      #   config: ".firebase/staging/GoogleService-Info.plist"
+
+  # -------------------------------
+  # Production environment
+  # Used for App Store / Play Store releases
+  # -------------------------------
+  production:
+    app:
+      # App name displayed to end users
+      name: "Project Setup"
+
+      # Launcher icon for production build
+      # Usually the final branded icon
+      icon: "assets/launcher_icon/launcher_icon.png"
+
+    android:
+      # Unique Android application ID for production
+      applicationId: "com.example.projectsetup"
+
+      # Firebase configuration file for Android (PRODUCTION project)
+      # firebase:
+      #   config: ".firebase/production/google-services.json"
+
+    ios:
+      # Unique iOS bundle identifier for production
+      bundleId: "com.example.projectsetup"
+
+      # Firebase configuration file for iOS (PRODUCTION project)
+      # firebase:
+      #   config: ".firebase/production/GoogleService-Info.plist"
+# IDE configuration (optional)
+# Uncomment the IDE you are using to enable better integration
+# ide: vscode
+# ide: idea
